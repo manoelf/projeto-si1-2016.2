@@ -21,20 +21,20 @@ public class Usuario extends org.springframework.security.core.userdetails.User{
     @Column
     private String senha;
     @Column
-    private String role;
+    private String cargo;
 
     public Usuario() {
         super("default", "default", AuthorityUtils.createAuthorityList("USER"));
     }
 
-    public Usuario(String nome, String email, String senha, String role) {
+    public Usuario(String nome, String email, String senha, String cargo) {
 
         super(email, senha, AuthorityUtils.createAuthorityList(role));
 
         this.nome = nome;
         this.email = email;
         this.senha = senha;
-        this.role = role;
+        this.cargo = cargo;
     }
 
     public Long getId() {
@@ -69,8 +69,8 @@ public class Usuario extends org.springframework.security.core.userdetails.User{
         this.senha = senha;
     }
 
-    public String getR() {
-        return role;
+    public String getCargo() {
+        return this.cargo;
     }
 
     public void setR(String r) {
