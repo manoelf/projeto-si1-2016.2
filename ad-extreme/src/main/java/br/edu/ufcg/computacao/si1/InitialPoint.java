@@ -6,7 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class InitialPoint {
 
+<<<<<<< HEAD
     //Brito branch
+=======
+    //Master branch
+>>>>>>> master
 	public static void main(String[] args) {
 		SpringApplication.run(InitialPoint.class, args);
 	}
