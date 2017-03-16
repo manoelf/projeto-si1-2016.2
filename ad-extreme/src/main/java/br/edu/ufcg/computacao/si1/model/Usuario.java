@@ -1,12 +1,8 @@
 package br.edu.ufcg.computacao.si1.model;
 
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.LinkedList;
 
 @Entity(name = "Usuario")
 @Table(name = "tb_usuario")
@@ -15,7 +11,7 @@ public class Usuario extends org.springframework.security.core.userdetails.User{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column
-    private String nome;
+    private String name;
     @Column(unique = true)
     private String email;
     @Column
@@ -27,11 +23,11 @@ public class Usuario extends org.springframework.security.core.userdetails.User{
         super("default", "default", AuthorityUtils.createAuthorityList("USER"));
     }
 
-    public Usuario(String nome, String email, String senha, String role) {
+    public Usuario(String name, String email, String senha, String role) {
 
         super(email, senha, AuthorityUtils.createAuthorityList(role));
 
-        this.nome = nome;
+        this.name = name;
         this.email = email;
         this.senha = senha;
         this.role = role;
@@ -46,11 +42,11 @@ public class Usuario extends org.springframework.security.core.userdetails.User{
     }
 
     public String getN() {
-        return nome;
+        return name;
     }
 
     public void setN(String n) {
-        this.nome = n;
+        this.name = n;
     }
 
     public String getEmail() {
