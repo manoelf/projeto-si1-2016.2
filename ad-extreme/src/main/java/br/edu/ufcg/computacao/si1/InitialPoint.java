@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class InitialPoint {
 
+    //Brito branch
 	public static void main(String[] args) {
 		SpringApplication.run(InitialPoint.class, args);
 	}
