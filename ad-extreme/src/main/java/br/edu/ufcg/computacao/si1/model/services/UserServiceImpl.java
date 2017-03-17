@@ -53,6 +53,9 @@ public class UserServiceImpl implements UserService{
     public boolean containsUserEmail(String email) {
         boolean result = false;
         for (User user: getAll()) {
+            if (user.getEmail().equals(email)) {
+                result = true;
+            }
         }
         return result;
     }
