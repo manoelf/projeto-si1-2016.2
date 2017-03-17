@@ -12,10 +12,15 @@ public class User{
     private Long id;
     private String name;
     private String email;
-    private String senha;
+    private String password;
     private PersonType personType;
 
-    public User() {
+    public User(String name, String email, String password, PersonType personType) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.personType = personType;
+
     }
 
 
