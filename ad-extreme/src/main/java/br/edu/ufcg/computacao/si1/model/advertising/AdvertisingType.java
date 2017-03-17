@@ -17,8 +17,7 @@ public enum AdvertisingType {
             case "FURNITURE":
                 return FURNITURE;
             default:
-                throw new RuntimeException("SKDLNA");
-
+                throw new RuntimeException("'" + type + "' Advertising type does not exists");
         }
     }
 }
