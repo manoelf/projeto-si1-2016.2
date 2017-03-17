@@ -48,4 +48,12 @@ public class UserServiceImpl implements UserService{
         return this.userRepository.findAll();
 
     }
+
+    @Override
+    public boolean containsUserEmail(String email) {
+        boolean result = false;
+        for (User user: getAll()) {
+        }
+        return result;
+    }
 }

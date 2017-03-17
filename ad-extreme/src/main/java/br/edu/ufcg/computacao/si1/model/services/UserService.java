@@ -18,4 +18,5 @@ public interface UserService {
 
     public List<User> getAll();
 
+    public boolean containsUserEmail(String email);
 }
