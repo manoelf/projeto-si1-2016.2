@@ -19,26 +19,25 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    @RequestMapping(value = "/registerUser", method = RequestMethod.GET)
     public ModelAndView getPageRegister(UserForm userForm) {
         ModelAndView model = new ModelAndView();
-        model.setViewName("register");
+        model.setViewName("registerUser");
 
         return model;
     }
 
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    @RequestMapping(value = "/registerUser", method = RequestMethod.POST)
     public ModelAndView register(UserForm userForm, BindingResult result, RedirectAttributes redirectAttributes) {
         if (result.hasErrors()) {
             return getPageRegister(userForm);
         }else if (userService.containsUserEmail(userForm.getEmail())) {
             redirectAttributes.addFlashAttribute("error", "This email is being used");
         }
-
         userService.create(userForm.getName(), userForm.getEmail(), userForm.getPassword(), userForm.getPersonType());
 
         redirectAttributes.addFlashAttribute("message", "User has been registered successfully!");
-        return new ModelAndView("redirect:/register");
+        return new ModelAndView("redirect:/registerUser");
 
     }
 }
