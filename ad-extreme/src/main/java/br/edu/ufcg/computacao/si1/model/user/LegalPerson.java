@@ -8,15 +8,15 @@ import java.util.Set;
  */
 public class LegalPerson implements PersonType {
 
-    private Set<Permissions> permissionsSet;
+    private Set<PostPermission> postPermissionSet;
 
     public LegalPerson() {
-        this.permissionsSet = new HashSet<>();
+        this.postPermissionSet = new HashSet<>();
     }
 
 
     @Override
-    public boolean hasPermission(Permissions permission) {
-        return permissionsSet.contains(permission);
+    public boolean hasPermission(PostPermission postPermission) {
+        return postPermissionSet.contains(postPermission);
     }
 }
