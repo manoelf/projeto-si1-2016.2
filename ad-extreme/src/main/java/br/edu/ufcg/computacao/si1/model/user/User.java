@@ -26,6 +26,7 @@ public class User{
     @Column(name = "password", nullable = false)
     private String password;
 
+
 //    @Column(name = "personType", nullable = false)
 //    private PersonType personType;
 

@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app>
 <head>
     <meta charset="UTF-8"/>
     <title>INDEX</title>
 </head>
 <body>
     <h1>INDEX</h1>
+    <a href="ad/list/advertising">list</a>
+
+    <div ng-controller="AdvertisingRegisterCtrl">
+        <div>
+            <ul>
+                <li ng-repeat="advertising in advertisingList">
+                    <span>{{advertising.title}}</span>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
 </body>
 </html>
