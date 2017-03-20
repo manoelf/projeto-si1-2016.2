@@ -46,15 +46,15 @@ public class AdvertisingController {
     }
 
     @RequestMapping(value = "ad/add/advertising", method = RequestMethod.POST)
-    public ModelAndView addNewAdvertising(@Valid AdvertisingForm advertisingForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+    public ModelAndView addNewAdvertising(LoggedUser loggedUser, @Valid AdvertisingForm advertisingForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
-            return createNewAdvertising(null);//TODO
+            return createNewAdvertising(loggedUser);
         }
 
         Advertising advertising= AdvertisingFactory.createNewAdvertising(advertisingForm);
         advertisingService.add(advertising);
 
-        redirectAttributes.addFlashAttribute("message", "Message to show");
+        redirectAttributes.addFlashAttribute("message", "Message to show");//TODO
 
         return new ModelAndView("redirect:/ad/add/advertising");
     }

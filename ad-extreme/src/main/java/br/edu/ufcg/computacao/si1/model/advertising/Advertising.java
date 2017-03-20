@@ -1,8 +1,11 @@
 package br.edu.ufcg.computacao.si1.model.advertising;
 
+import javax.persistence.Entity;
+
 /**
  * Created by matth on 16/03/2017.
  */
+@Entity
 public class Advertising {
     private Long id;
     private Long ownerId;
