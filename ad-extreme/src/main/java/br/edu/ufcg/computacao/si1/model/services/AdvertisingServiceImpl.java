@@ -22,6 +22,11 @@ public class AdvertisingServiceImpl implements AdvertisingService {
     private AdvertisingRepository advertisingRepository;
 
     @Override
+    public void add(Advertising advertising) {
+        save(advertising);
+    }
+
+    @Override
     public Advertising getById(Long id) {
         return this.advertisingRepository.findOne(id);
     }

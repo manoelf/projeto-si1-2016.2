@@ -5,5 +5,5 @@ package br.edu.ufcg.computacao.si1.model.user;
  */
 public interface PersonType {
 
-    public boolean hasPermission(Permissions permission);
+    public boolean hasPermission(PostPermission postPermission);
 }

@@ -11,6 +11,8 @@ import java.util.Set;
  */
 public interface AdvertisingService {
 
+    public void add(Advertising advertising) ;
+
     public Advertising getById(Long id);
     public List<Advertising> getByOwnerId(Long ownerId);
 
