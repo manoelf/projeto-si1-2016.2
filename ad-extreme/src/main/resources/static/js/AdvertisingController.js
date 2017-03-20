@@ -3,7 +3,7 @@
  */
 
 appADExtreme.controller ("AdvertisingRegisterCtrl", function($scope, $http){
-    $scope.advertisingList = [];
+    $scope.advertisingList = [{title: "testing title", price: 10}];
 
     $http({method: "POST", url: "ad/list/advertising"}).then(function (response) {
 
