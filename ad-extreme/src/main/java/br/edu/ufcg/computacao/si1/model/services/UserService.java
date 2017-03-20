@@ -9,7 +9,6 @@ import java.util.List;
 /**
  * Created by matth on 16/03/2017.
  */
-@Service
 public interface UserService {
     public User getById (Long id);
 

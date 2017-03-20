@@ -10,7 +10,6 @@ import java.util.Set;
 /**
  * Created by matth on 16/03/2017.
  */
-@Service
 public interface AdvertisingService {
 
     public void add(Advertising advertising) ;

@@ -7,16 +7,16 @@ import br.edu.ufcg.computacao.si1.model.repositories.AdvertisingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Created by matth on 16/03/2017.
  */
 @Service
 public class AdvertisingServiceImpl implements AdvertisingService {
+
+    public AdvertisingServiceImpl() {
+    }
 
     @Autowired
     private AdvertisingRepository advertisingRepository;
@@ -33,7 +33,7 @@ public class AdvertisingServiceImpl implements AdvertisingService {
 
     @Override
     public List<Advertising> getByOwnerId(Long ownerId) {
-        return this.advertisingRepository.getByOwnerID(ownerId);
+        return this.advertisingRepository.getByOwnerId(ownerId);
     }
 
     @Override
@@ -64,6 +64,7 @@ public class AdvertisingServiceImpl implements AdvertisingService {
 
     @Override
     public List<Advertising> getByType(AdvertisingType advertisingType) {
-        return this.advertisingRepository.getByType(advertisingType);
+//        return this.advertisingRepository.getByType(advertisingType);
+        return null;
     }
 }
