@@ -1,29 +1,44 @@
 package br.edu.ufcg.computacao.si1.model.advertising;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 /**
  * Created by matth on 16/03/2017.
  */
 @Entity
+@Table(name="advertisement_tb")
 public class Advertising {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    @Column(name = "_id", nullable = false, unique = true)
     private Long id;
+
+    @Column(name = "ownerId", nullable = false)
     private Long ownerId;
 
+    @Column(name = "title", nullable = false)
     private String title;
+
+    @Column(name = "creationDate", nullable = false)
     private String creationDate;
+
+    @Column(name = "price", nullable = false)
     private Double price;
 
-    private AdvertisingType advertisingType;
+//    @Column(name = "advertisingType", nullable = false)
+//    private AdvertisingType advertisingType;
 
+    public Advertising() {
+    }
 
-    public Advertising(Long ownerId, String title, Double price, AdvertisingType type) {
+    public Advertising(Long ownerId, String title, Double price, AdvertisingType advertisingType) {
         this.ownerId = ownerId;
         this.title = title;
         this.creationDate = "TODAY"; //TODO
         this.price = price;
 
-        this.advertisingType = type;
+//        this.advertisingType = advertisingType;
     }
 
     public Long getId() {
@@ -66,11 +81,13 @@ public class Advertising {
         this.price = price;
     }
 
-    public AdvertisingType getAdvertisingType() {
-        return advertisingType;
-    }
+//    public AdvertisingType getAdvertisingType() {
+//        return advertisingType;
+//    }
+//
+//    public void setAdvertisingType(AdvertisingType advertisingType) {
+//        this.advertisingType = advertisingType;
+//    }
 
-    public void setAdvertisingType(AdvertisingType advertisingType) {
-        this.advertisingType = advertisingType;
-    }
+
 }

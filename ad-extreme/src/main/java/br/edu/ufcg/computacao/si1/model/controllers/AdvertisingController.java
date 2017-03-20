@@ -7,6 +7,7 @@ import br.edu.ufcg.computacao.si1.model.services.AdvertisingService;
 import br.edu.ufcg.computacao.si1.model.user.LoggedUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,11 +26,12 @@ public class AdvertisingController {
     @Autowired
     private AdvertisingService advertisingService;
 
-    @RequestMapping(value = "ad/list/advertising", method = RequestMethod.POST)
+    @RequestMapping(value = "ad/list/advertising", method = RequestMethod.GET)
     public ModelAndView listAdvertising() {
+        System.out.println("HERE");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject(advertisingService.getAll());
-        modelAndView.setViewName("ad/list_advertising");
+        modelAndView.setViewName("ad/advertising_list");
 
         return modelAndView;
     }
@@ -40,7 +42,7 @@ public class AdvertisingController {
 
         modelAndView.addObject("types", loggedUser.getPostPermisions());
 
-        modelAndView.setViewName("ad/register_advertising");
+        modelAndView.setViewName("ad/advertising_register");
 
         return modelAndView;
     }

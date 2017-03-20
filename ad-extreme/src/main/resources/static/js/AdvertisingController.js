@@ -5,7 +5,7 @@
 appADExtreme.controller ("AdvertisingRegisterCtrl", function($scope, $http){
     $scope.advertisingList = [];
 
-    $http({method: "GET", url: "ad/list/advertising"}).then(function (response) {
+    $http({method: "POST", url: "ad/list/advertising"}).then(function (response) {
 
         $scope.advertisingList = response.data;
 

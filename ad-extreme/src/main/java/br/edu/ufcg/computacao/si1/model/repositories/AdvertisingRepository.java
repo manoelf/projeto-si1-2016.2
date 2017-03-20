@@ -14,6 +14,7 @@ import java.util.Set;
  */
 @Repository
 public interface AdvertisingRepository extends JpaRepository<Advertising, Long> {
-    List<Advertising> getByOwnerID(Long ownerId);
-    List<Advertising> getByType(AdvertisingType advertisingType);
+    List<Advertising> getByOwnerId(Long ownerId);
+//    List<Advertising> getByType(AdvertisingType advertisingType);
+    //21db7ca795
 }
