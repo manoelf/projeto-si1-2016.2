@@ -16,6 +16,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 import javax.ws.rs.POST;
+import java.util.concurrent.Semaphore;
 
 /**
  * Created by gersonsales on 16/03/17.
@@ -45,6 +46,7 @@ public class AdvertisingController {
         modelAndView.setViewName("ad/advertising_register");
 
         return modelAndView;
+
     }
 
     @RequestMapping(value = "ad/add/advertising", method = RequestMethod.POST)
