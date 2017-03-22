@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="appADExtreme">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,9 +16,16 @@
         <script src="app.js"></script>
         <script src="plugins.js"></script>
         <script src="main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+        <script src="angular.js"></script>
+        <script src="angular-route.js"></script>
+        <script src="angular.min.js"></script>
+
+
+        <title>Index</title>
     </head>
-    <body>
+    <body ng-controller="AdvertisingController">
+
+        <h1>{{app}}</h1>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

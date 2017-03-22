@@ -2,7 +2,7 @@
  * Created by gersonsales on 21/03/17.
  */
 
-App.controller('AdvertisingController', ['$scope', 'AdvertisingService', function ($scope, AdvertisingService) {
+app.controller('AdvertisingController', ['$scope', 'AdvertisingService', function ($scope, AdvertisingService) {
 
     var self = this;
     self.advertisements = [{text: "learn Angularjs", done: false, favorite: false},
