@@ -1,13 +1,12 @@
-package br.edu.ufcg.computacao.si1.model.controllers;
+package br.edu.ufcg.computacao.si1.controllers;
 
+import br.edu.ufcg.computacao.si1.factories.AdvertisingFactory;
 import br.edu.ufcg.computacao.si1.model.advertising.Advertising;
-import br.edu.ufcg.computacao.si1.model.factories.AdvertisingFactory;
 import br.edu.ufcg.computacao.si1.model.forms.AdvertisingForm;
-import br.edu.ufcg.computacao.si1.model.services.AdvertisingService;
 import br.edu.ufcg.computacao.si1.model.user.LoggedUser;
+import br.edu.ufcg.computacao.si1.services.AdvertisingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,8 +14,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
-import javax.ws.rs.POST;
-import java.util.concurrent.Semaphore;
 
 /**
  * Created by gersonsales on 16/03/17.
@@ -28,12 +25,12 @@ public class AdvertisingController {
     private AdvertisingService advertisingService;
 
     @RequestMapping(value = "ad/list/advertising", method = RequestMethod.GET)
-    public ModelAndView listAdvertising() {
+    public String listAdvertising() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject(advertisingService.getAll());
         modelAndView.setViewName("ad/advertising_list");
 
-        return modelAndView;
+        return modelAndView.getViewName();
     }
 
     @RequestMapping(value = "ad/add/advertising", method = RequestMethod.GET)
