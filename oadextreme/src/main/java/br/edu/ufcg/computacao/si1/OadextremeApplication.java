@@ -4,11 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InitialPoint{
+public class OadextremeApplication {
 
-    //Master branch
 	public static void main(String[] args) {
-		SpringApplication.run(InitialPoint.class, args);
+		SpringApplication.run(OadextremeApplication.class, args);
 	}
-
 }
