@@ -16,4 +16,4 @@ app.factory('AdvertisingService', ['$http', '$q', function ($http, $q) {
             )
         }
     }
-}])
+}]);

@@ -3,6 +3,7 @@
  */
 
 app.controller('AdvertisingController', ['$scope', 'AdvertisingService', function ($scope, AdvertisingService) {
+    $scope.app = "Ad Extreme";
 
     var self = this;
     self.advertisements = [{text: "learn Angularjs", done: false, favorite: false},
