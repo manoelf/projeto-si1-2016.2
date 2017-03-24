@@ -11,10 +11,17 @@
 <body>
 
     <div ng-controller="AdvertisingController as controller">
-        <form ng-submit="controller.submit()">
+        <form id="adForm" ng-submit="controller.submit()">
             <input type="hidden" ng-model="controller.advertisementForm.id"/>
             <input type="text" placeholder="Write the advertisement content here." ng-model="controller.advertisement.title"/>
             <input type="number"  ng-model="controller.advertisement.price"/>
+
+            <select ng-model="controller.advertisement.type" form="adForm">
+                <option>JOB</option>
+                <option>SERVICE</option>
+                <option>BUILD</option>
+                <option>FURNITURE</option>
+            </select>
             <input type="submit"/>
         </form>
     </div>

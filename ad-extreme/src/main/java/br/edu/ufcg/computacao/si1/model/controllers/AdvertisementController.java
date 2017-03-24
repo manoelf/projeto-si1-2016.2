@@ -73,8 +73,9 @@ public class AdvertisementController {
     }
 
     @RequestMapping(value = "/advertisement/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<Advertisement> deleteAdvertisement(@RequestBody Advertisement advertisement) {
-        advertisementService.delete(advertisement.getId());
+    public ResponseEntity<Advertisement> deleteAdvertisement(@PathVariable("id") long id) {
+        System.out.println("Deleting advertisement " + id);
+        advertisementService.delete(id);
         return new ResponseEntity<Advertisement>(HttpStatus.NO_CONTENT);
     }
 

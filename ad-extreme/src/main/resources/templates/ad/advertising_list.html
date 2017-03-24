@@ -15,12 +15,30 @@
 <body ng-controller="AdvertisingController as controller">
     <h1>Advertisement List</h1>
     <div ng-init="controller.fetchAllAdvertisements()">
-        <ul>
+        <table>
+            <thead>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Type</td>
 
-            <li ng-repeat="advertisement in controller.advertisements">
-                <span ng-bind="advertisement.title"></span>
-            </li>
-        </ul>
+
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="advertisement in controller.advertisements">
+                    <td><span ng-bind="advertisement.id"></span></td>
+                    <td><span ng-bind="advertisement.title"></span></td>
+                    <td><span ng-bind="advertisement.price"></span></td>
+                    <td><span ng-bind="advertisement.type"></span></td>
+                    <td><button ng-click="controller.delete(advertisement.id)"></button></td>
+                </tr>
+
+
+            </tbody>
+
+
+        </table>
 
 
     </div>

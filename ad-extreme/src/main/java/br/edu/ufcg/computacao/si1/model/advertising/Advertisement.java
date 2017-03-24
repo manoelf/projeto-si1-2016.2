@@ -26,8 +26,8 @@ public class Advertisement {
     @Column(name = "price", nullable = false)
     private Double price;
 
-//    @Column(name = "advertisingType", nullable = false)
-//    private AdvertisementType advertisingType;
+    @Column(name = "advertisementType", nullable = false)
+    private AdvertisementType advertisementType;
 
     public Advertisement() {
     }
@@ -38,7 +38,7 @@ public class Advertisement {
         this.creationDate = "TODAY"; //TODO
         this.price = price;
 
-//        this.advertisementType = advertisementType;
+        this.advertisementType = advertisementType;
     }
 
     public Long getId() {
@@ -81,14 +81,13 @@ public class Advertisement {
         this.price = price;
     }
 
-//    public AdvertisementType getAdvertisingType() {
-//        return advertisingType;
-//    }
-//
-//    public void setAdvertisingType(AdvertisementType advertisingType) {
-//        this.advertisingType = advertisingType;
-//    }
+    public AdvertisementType getType() {
+        return advertisementType;
+    }
 
+    public void setType(AdvertisementType advertisingType) {
+        this.advertisementType = advertisingType;
+    }
 
     @Override
     public String toString() {
@@ -98,6 +97,7 @@ public class Advertisement {
                 ", title='" + title + '\'' +
                 ", creationDate='" + creationDate + '\'' +
                 ", price=" + price +
+                ", advertisementType=" + advertisementType +
                 '}';
     }
 }

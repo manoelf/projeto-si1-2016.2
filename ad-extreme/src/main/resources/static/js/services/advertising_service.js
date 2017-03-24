@@ -39,6 +39,31 @@ app.factory('AdvertisingService', ['$http', '$q', function ($http, $q) {
                     return $q.reject(errorResponse);
                 }
             )
+        },
+
+        deleteAdvertisement: function (id) {
+            return $http.delete('http://localhost:8080/advertisement/' + id).then(
+                function (response) {
+                    return response.data;
+                },
+                function (errorResponse) {
+                    console.error("Error while deleting advertisement.")
+                    return $q.reject(errorResponse);
+                }
+            )
+        },
+
+        getAdvertisement: function (id) {
+            return $http.get('http://localhost:8080/advertisement/' + id).then (
+                function (response) {
+                    return response.data;
+                },
+                function (errorResponse) {
+                    console.error("Error while getting advertisement.")
+                    return $q.reject(errorResponse);
+                }
+            )
+
         }
     }
 }]);

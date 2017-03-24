@@ -21,7 +21,7 @@ public class AdvertisementForm {
     @DecimalMin(value = "0.1", message = "O preço minimo é 0.1 para um anúncio.")
     private Double price;
 
-//    private String type; //TODO
+    private String type; //TODO
 
 //
 //    public Long getOwnerId() {
@@ -48,13 +48,13 @@ public class AdvertisementForm {
         this.price = price;
     }
 
-//    public String getType() {
-//        return type;
-//    }
-//
-//    public void setType(String type) {
-//        this.type = type;
-//    }
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
 
     @Override
