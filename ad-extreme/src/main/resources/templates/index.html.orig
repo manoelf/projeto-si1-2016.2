@@ -29,13 +29,24 @@
 
 
 
+<<<<<<< 41bedefbc5926dd24bfb2bdb464f6adaf7251224
+        <div class="topnav" id="myTopnav">
+            <a href="http://localhost:8080">Ad Extreme</a>
+            <a href="http://localhost:8080/html/user/register_user.html">Register</a>
+            <a href="http://localhost:8080/html/user/user_login.html">Login</a>
+        </div>
+
+
+
+
+=======
         <script src="./js/services/advertising_service.js"></script>
+>>>>>>> Index incompleted
 
 
     </head>
     <body ng-controller="AdvertisingController">
 
-        <h1>Eh nois</h1>
         <h1>{{app}}</h1>
         <p>Negociar é nosso lema !!</p>
 
