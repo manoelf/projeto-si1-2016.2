@@ -20,16 +20,19 @@
         <script src="./js/frameworks/bootstrap.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/controllers/advertising_controller.js"></script>
-        <nav id="main">
-            <ul type="disc">
-                <li><a href="https://github.com/manoelf/projeto-si1-2016.2">GitHub</a> </li>
+        <script src="./js/services/advertising_service.js"></script>
+<<<<<<< 59bd7fa006c8cf4f43259a58cbfacec1c40680fe
+=======
 
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home">Ad Extreme</a>
+            <a href="#news">Register</a>
+            <a href="#contact">Login</a>
+        </div>
+>>>>>>> Part of index
 
 
 
-<<<<<<< 07f50a03dacabc214a65d6997f3819766e3c6091
         <div class="topnav" id="myTopnav">
             <a href="http://localhost:8080">Ad Extreme</a>
             <a href="http://localhost:8080/html/user/register_user.html">Register</a>
@@ -38,15 +41,10 @@
 
 
 
-
-=======
-        <script src="./js/services/advertising_service.js"></script>
->>>>>>> Index incompleted
-
-
     </head>
     <body ng-controller="AdvertisingController">
 
+        <h1>Eh nois</h1>
         <h1>{{app}}</h1>
         <p>Negociar é nosso lema !!</p>
 
