@@ -22,7 +22,6 @@
         <script src="./js/controllers/advertising_controller.js"></script>
         <script src="./js/services/advertising_service.js"></script>
 
-
         <div class="topnav" id="myTopnav">
             <a href="#home">Ad Extreme</a>
             <a href="#news">Register</a>
@@ -31,13 +30,20 @@
 
 
 
+
+<<<<<<< d0cc4897e2d013825c8e7961e30e6ef1e53cd49d
+
         <div class="topnav" id="myTopnav">
             <a href="http://localhost:8080">Ad Extreme</a>
             <a href="http://localhost:8080/html/user/register_user.html">Register</a>
             <a href="http://localhost:8080/html/user/user_login.html">Login</a>
         </div>
 
+
+
         <script src="./js/services/advertising_service.js"></script>
+=======
+>>>>>>> Part of index
 
 
     </head>
