@@ -70,17 +70,21 @@
 .credits{
     text-align: center;
 
-
+<<<<<<< f072d00132598854e3542252b602e69ce45c5f9a
+<<<<<<< 07f50a03dacabc214a65d6997f3819766e3c6091
+=======
+<<<<<<< 41bedefbc5926dd24bfb2bdb464f6adaf7251224
+>>>>>>> Index incompleted
     padding: 50px;
     margin-bottom: 0px;
     margin-top: -30px;
     color: black;
-
+=======
     padding: 15px;
     margin-bottom: 0px;
     margin-top: -30px;
     color: white;
-
+>>>>>>> Index incompleted
 
 }
 
@@ -109,7 +113,11 @@ nav#main a{
     color: #080808;
     text-decoration: none;
 }
-
+<<<<<<< f072d00132598854e3542252b602e69ce45c5f9a
+<<<<<<< 07f50a03dacabc214a65d6997f3819766e3c6091
+=======
+<<<<<<< 41bedefbc5926dd24bfb2bdb464f6adaf7251224
+>>>>>>> Index incompleted
 
 .topnav {
     background-color: #333;
