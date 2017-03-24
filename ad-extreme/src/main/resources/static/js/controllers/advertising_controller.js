@@ -6,9 +6,7 @@ app.controller('AdvertisingController', ['$scope', 'AdvertisingService', functio
     $scope.app = "Ad Extreme";
 
     var self = this;
-    self.advertisements = [{text: "learn Angularjs", done: false, favorite: false},
-        {text: "learn html", done: false, favorite: false},
-        {text: "learn css", done: false, favorite: false}];
+    self.advertisements = [];
 
     self.fetchAllAdvertisements = function () {
         AdvertisingService.fetchAllAdvertisements().then(
@@ -20,7 +18,18 @@ app.controller('AdvertisingController', ['$scope', 'AdvertisingService', functio
             }
         )
 
+    };
+
+    self.createAdvertisement = function (advertisingForm) {
+        AdvertisingService.createAdvertisement(advertisingForm).then(
+            self.fetchAllAdvertisements(),
+            function (errorResponse) {
+                console.error("Error while creating advertisement.")
+            }
+        )
     }
+
+
 
 
 

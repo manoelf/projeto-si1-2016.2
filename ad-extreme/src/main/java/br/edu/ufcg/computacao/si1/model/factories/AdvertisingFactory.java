@@ -21,8 +21,8 @@ public class AdvertisingFactory {
         Long ownerId = advertisingForm.getOwnerId();
         String title = advertisingForm.getTitle();
         Double price = advertisingForm.getPrice();
-        String type = advertisingForm.getType();
-        AdvertisingType advertisingType = AdvertisingType.getType(type);
+//        String type = advertisingForm.getType();
+        AdvertisingType advertisingType = AdvertisingType.BUILD;//TODO getType(type);
         Advertising advertising = new Advertising(ownerId, title, price, advertisingType);
         return advertising;
     }

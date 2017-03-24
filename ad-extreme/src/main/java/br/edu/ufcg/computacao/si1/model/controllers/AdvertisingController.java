@@ -27,7 +27,7 @@ public class AdvertisingController {
     @Autowired
     private AdvertisingService advertisingService;
 
-    @RequestMapping(value = "ad/list/advertising", method = RequestMethod.GET)
+    @RequestMapping(value = "/ad/list", method = RequestMethod.GET)
     public ModelAndView listAdvertising() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject(advertisingService.getAll());
@@ -36,22 +36,22 @@ public class AdvertisingController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "ad/add/advertising", method = RequestMethod.GET)
+    @RequestMapping(value = "ad/create", method = RequestMethod.GET)
     public ModelAndView createNewAdvertising(LoggedUser loggedUser) {
         ModelAndView modelAndView = new ModelAndView();
 
-        modelAndView.addObject("types", loggedUser.getPostPermisions());
+//        modelAndView.addObject("types", loggedUser.getPostPermisions());
 
-        modelAndView.setViewName("ad/advertising_register");
+        modelAndView.setViewName("ad/advertising_form");
 
         return modelAndView;
 
     }
 
-    @RequestMapping(value = "ad/add/advertising", method = RequestMethod.POST)
-    public ModelAndView addNewAdvertising(LoggedUser loggedUser, @Valid AdvertisingForm advertisingForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+    @RequestMapping(value = "ad/add", method = RequestMethod.POST)
+    public ModelAndView addNewAdvertising(@Valid AdvertisingForm advertisingForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
-            return createNewAdvertising(loggedUser);
+            return createNewAdvertising(null);
         }
 
         Advertising advertising= AdvertisingFactory.createNewAdvertising(advertisingForm);
@@ -59,7 +59,8 @@ public class AdvertisingController {
 
         redirectAttributes.addFlashAttribute("message", "Message to show");//TODO
 
-        return new ModelAndView("redirect:/ad/add/advertising");
+        System.out.println("Created successfully!");
+        return new ModelAndView("redirect:/ad/create");
     }
 
 }

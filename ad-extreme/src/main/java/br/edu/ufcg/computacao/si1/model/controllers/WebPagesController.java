@@ -17,4 +17,5 @@ public class WebPagesController {
         modelAndView.setViewName("index");
         return modelAndView;
     }
+
 }
