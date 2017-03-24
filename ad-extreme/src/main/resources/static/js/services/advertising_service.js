@@ -5,12 +5,37 @@
 app.factory('AdvertisingService', ['$http', '$q', function ($http, $q) {
     return {
         fetchAllAdvertisements: function () {
-            return $http.get('http://localhost:8080/').then(
+            return $http.get('http://localhost:8080/advertisement/').then(
                 function (response) {
                     return response.data;
                 },
                 function (errorResponse) {
                     console.error('Error while fetching advertisements');
+                    return $q.reject(errorResponse);
+                }
+            )
+        },
+
+
+        createAdvertisement: function (advertisementForm) {
+            return $http.post('http://localhost:8080/advertisement/', advertisementForm).then(
+                function (response) {
+                    return response.data;
+                },
+                function (errorResponse) {
+                    console.error("Error while creating advertising");
+                    return $q.reject(errorResponse);
+                }
+            )
+        },
+
+        updateAdvertisement: function (advertisement) {
+            return $http.post('', advertisement).then (
+                function (response) {
+                    return response.data;
+                },
+                function (errorResponse) {
+                    console.error("Error while update advertisement");
                     return $q.reject(errorResponse);
                 }
             )

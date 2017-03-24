@@ -7,7 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="advertisement_tb")
-public class Advertising {
+public class Advertisement {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -27,18 +27,18 @@ public class Advertising {
     private Double price;
 
 //    @Column(name = "advertisingType", nullable = false)
-//    private AdvertisingType advertisingType;
+//    private AdvertisementType advertisingType;
 
-    public Advertising() {
+    public Advertisement() {
     }
 
-    public Advertising(Long ownerId, String title, Double price, AdvertisingType advertisingType) {
+    public Advertisement(Long ownerId, String title, Double price, AdvertisementType advertisementType) {
         this.ownerId = ownerId;
         this.title = title;
         this.creationDate = "TODAY"; //TODO
         this.price = price;
 
-//        this.advertisingType = advertisingType;
+//        this.advertisementType = advertisementType;
     }
 
     public Long getId() {
@@ -81,13 +81,23 @@ public class Advertising {
         this.price = price;
     }
 
-//    public AdvertisingType getAdvertisingType() {
+//    public AdvertisementType getAdvertisingType() {
 //        return advertisingType;
 //    }
 //
-//    public void setAdvertisingType(AdvertisingType advertisingType) {
+//    public void setAdvertisingType(AdvertisementType advertisingType) {
 //        this.advertisingType = advertisingType;
 //    }
 
 
+    @Override
+    public String toString() {
+        return "Advertisement{" +
+                "id=" + id +
+                ", ownerId=" + ownerId +
+                ", title='" + title + '\'' +
+                ", creationDate='" + creationDate + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

@@ -3,10 +3,10 @@ package br.edu.ufcg.computacao.si1.model.advertising;
 /**
  * Created by matth on 16/03/2017.
  */
-public enum AdvertisingType {
+public enum AdvertisementType {
     JOB, SERVICE, BUILD, FURNITURE;
 
-    public static AdvertisingType getType(String type) {
+    public static AdvertisementType getType(String type) {
         switch (type.toUpperCase()) {
             case "JOB":
                 return JOB;
@@ -17,7 +17,7 @@ public enum AdvertisingType {
             case "FURNITURE":
                 return FURNITURE;
             default:
-                throw new RuntimeException("'" + type + "' Advertising type does not exists");
+                throw new RuntimeException("'" + type + "' Advertisement type does not exists");
         }
     }
 }

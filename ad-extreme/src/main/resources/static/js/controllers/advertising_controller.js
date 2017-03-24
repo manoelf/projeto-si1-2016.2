@@ -6,11 +6,12 @@ app.controller('AdvertisingController', ['$scope', 'AdvertisingService', functio
     $scope.app = "Ad Extreme";
 
     var self = this;
-    self.advertisements = [{text: "learn Angularjs", done: false, favorite: false},
-        {text: "learn html", done: false, favorite: false},
-        {text: "learn css", done: false, favorite: false}];
+    self.advertisement = {id: null, title: null, price: null };
+    self.nullAdvertisementForm = {id: null, title: null, price: null };
+    self.advertisements = [];
 
     self.fetchAllAdvertisements = function () {
+        console.log("fetchAllAdvertisements()");
         AdvertisingService.fetchAllAdvertisements().then(
             function (advertisements) {
                 self.advertisements = advertisements;
@@ -20,7 +21,41 @@ app.controller('AdvertisingController', ['$scope', 'AdvertisingService', functio
             }
         )
 
+    };
+
+    self.createAdvertisement = function (advertisementForm) {
+        AdvertisingService.createAdvertisement(advertisementForm).then(
+            self.fetchAllAdvertisements(),
+            function (errorResponse) {
+                console.error("Error while creating advertisement.")
+            }
+        )
+    };
+
+    self.updateAdvertisement = function (advertisement) {
+        AdvertisingService.updateAdvertisement(advertisement).then(
+            self.fetchAllAdvertisements(),
+            function (errorResponse) {
+                console.error("Error while updating advertisement ", advertisement.id);
+            }
+        )
+    };
+
+    self.submit = function () {
+        if (self.advertisement.id == null) {
+            self.createAdvertisement(self.advertisement);
+            console.log("Saving new advertisement", self.advertisement);
+            self.advertisement = self.nullAdvertisementForm;
+        }else {
+            self.updateAdvertisement(self.advertisement);
+            console.log("'Advertisement update with id'", self.advertisement.id);
+
+        }
+
+
     }
+
+
 
 
 
