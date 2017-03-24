@@ -11,11 +11,19 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class WebPagesController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView index() {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index");
-        return modelAndView;
+    @RequestMapping(value = "/")
+    public String index() {
+        return "index";
+    }
+
+    @RequestMapping(value = "/advertisement/list")
+    public String getAdvertisementList() {
+        return "ad/advertising_list";
+    }
+
+    @RequestMapping(value = "/advertisement/form")
+    public String createNewAdvertisement() {
+        return "ad/advertising_form";
     }
 
 }

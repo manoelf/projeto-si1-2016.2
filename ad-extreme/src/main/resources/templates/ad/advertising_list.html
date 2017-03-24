@@ -11,23 +11,16 @@
     <script src="./../js/controllers/advertising_controller.js"></script>
     <script src="./../js/services/advertising_service.js"></script>
 
-
-
-
-
 </head>
-<body>
-    <h1>{{app}}</h1>
-    <div ng-controller="AdvertisingController as controller">
-        <div>
-            <button ng-click="fetchAllAdvertisements()"></button>
-            <ul>
-                <li ng-repeat="advertising in controller.advertisements">
-                    <span ng-bind="advertising.text"></span>
-                    <span>{{advertising.text}}</span>
-                </li>
-            </ul>
-        </div>
+<body ng-controller="AdvertisingController as controller">
+    <h1>Advertisement List</h1>
+    <div ng-init="controller.fetchAllAdvertisements()">
+        <ul>
+
+            <li ng-repeat="advertisement in controller.advertisements">
+                <span ng-bind="advertisement.title"></span>
+            </li>
+        </ul>
 
 
     </div>

@@ -9,8 +9,8 @@ import javax.validation.constraints.Size;
 /**
  * Created by gersonsales on 16/03/17.
  */
-public class AdvertisingForm {
-    private Long ownerId;
+public class AdvertisementForm {
+//    private Long ownerId;
 
     @NotNull(message = "O titulo não pode ser nulo.")
     @NotEmpty(message = "O titulo não pode esta vazio.")
@@ -23,14 +23,14 @@ public class AdvertisingForm {
 
 //    private String type; //TODO
 
-
-    public Long getOwnerId() {
-        return ownerId;
-    }
-
-    public void setOwnerId(Long ownerId) {
-        this.ownerId = ownerId;
-    }
+//
+//    public Long getOwnerId() {
+//        return ownerId;
+//    }
+//
+//    public void setOwnerId(Long ownerId) {
+//        this.ownerId = ownerId;
+//    }
 
     public String getTitle() {
         return title;
@@ -57,4 +57,12 @@ public class AdvertisingForm {
 //    }
 
 
+    @Override
+    public String toString() {
+        return "AdvertisementForm{" +
+//                "ownerId=" + ownerId + TODO
+                ", title='" + title + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

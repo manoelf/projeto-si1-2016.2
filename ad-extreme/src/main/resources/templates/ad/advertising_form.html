@@ -11,11 +11,11 @@
 <body>
 
     <div ng-controller="AdvertisingController as controller">
-        <form action="#" ng-submit="controller.createAdvertisement(this)">
-            <textarea id="title" placeholder="Write the advertisement content here."></textarea>
-            <input type="number" placeholder="Price"/>
+        <form ng-submit="controller.submit()">
+            <input type="hidden" ng-model="controller.advertisementForm.id"/>
+            <input type="text" placeholder="Write the advertisement content here." ng-model="controller.advertisement.title"/>
+            <input type="number"  ng-model="controller.advertisement.price"/>
             <input type="submit"/>
-
         </form>
     </div>
 

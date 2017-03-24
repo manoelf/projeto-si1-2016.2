@@ -5,7 +5,7 @@
 app.factory('AdvertisingService', ['$http', '$q', function ($http, $q) {
     return {
         fetchAllAdvertisements: function () {
-            return $http.get('http://localhost:8080/ad/list').then(
+            return $http.get('http://localhost:8080/advertisement/').then(
                 function (response) {
                     return response.data;
                 },
@@ -18,7 +18,7 @@ app.factory('AdvertisingService', ['$http', '$q', function ($http, $q) {
 
 
         createAdvertisement: function (advertisementForm) {
-            return $http.post('http://localhost:8080/ad/add', advertisementForm).then(
+            return $http.post('http://localhost:8080/advertisement/', advertisementForm).then(
                 function (response) {
                     return response.data;
                 },
@@ -27,8 +27,18 @@ app.factory('AdvertisingService', ['$http', '$q', function ($http, $q) {
                     return $q.reject(errorResponse);
                 }
             )
+        },
 
-
+        updateAdvertisement: function (advertisement) {
+            return $http.post('', advertisement).then (
+                function (response) {
+                    return response.data;
+                },
+                function (errorResponse) {
+                    console.error("Error while update advertisement");
+                    return $q.reject(errorResponse);
+                }
+            )
         }
     }
 }]);
