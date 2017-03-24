@@ -22,7 +22,7 @@ public class UserController {
     @RequestMapping(value = "/registerUser", method = RequestMethod.GET)
     public ModelAndView getPageRegister(UserForm userForm) {
         ModelAndView model = new ModelAndView();
-        model.setViewName("registerUser");
+        model.setViewName("user/register_user");
 
         return model;
     }
