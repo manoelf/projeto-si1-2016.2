@@ -20,36 +20,38 @@
         <script src="./js/frameworks/bootstrap.js"></script>
         <script src="./js/app.js"></script>
         <script src="./js/controllers/advertising_controller.js"></script>
-        <script src="./js/services/advertising_service.js"></script>
+        <nav id="main">
+            <ul type="disc">
+                <li><a href="https://github.com/manoelf/projeto-si1-2016.2">GitHub</a> </li>
+
+            </ul>
+        </nav>
+
+
+
+
+
 
         <div class="topnav" id="myTopnav">
-            <a href="#home">Ad Extreme</a>
-            <a href="#news">Register</a>
-            <a href="#contact">Login</a>
-        </div>
-
-
-
-
-<<<<<<< d0cc4897e2d013825c8e7961e30e6ef1e53cd49d
-
-        <div class="topnav" id="myTopnav">
+<<<<<<< 48545bb0aed11334910a4da5d66fdcd590aa2f5b
             <a href="http://localhost:8080">Ad Extreme</a>
             <a href="http://localhost:8080/html/user/register_user.html">Register</a>
             <a href="http://localhost:8080/html/user/user_login.html">Login</a>
+=======
+            <a href="templates/index.html">Ad Extreme</a>
+            <a href="user/register_user.html">Register</a>
+            <a href="user/user_login.html">Login</a>
+>>>>>>> index and login
         </div>
 
 
 
         <script src="./js/services/advertising_service.js"></script>
-=======
->>>>>>> Part of index
 
 
     </head>
     <body ng-controller="AdvertisingController">
 
-        <h1>Eh nois</h1>
         <h1>{{app}}</h1>
         <p>Negociar é nosso lema !!</p>
 
