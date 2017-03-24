@@ -29,6 +29,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -42,11 +43,25 @@
             <a href="user/register_user.html">Register</a>
             <a href="user/user_login.html">Login</a>
 >>>>>>> index and login
+=======
+<<<<<<< 41bedefbc5926dd24bfb2bdb464f6adaf7251224
+        <div class="topnav" id="myTopnav">
+            <a href="http://localhost:8080">Ad Extreme</a>
+            <a href="http://localhost:8080/html/user/register_user.html">Register</a>
+            <a href="http://localhost:8080/html/user/user_login.html">Login</a>
+>>>>>>> 388eb0db8a5ea574bfd68118316583a091addcf5
         </div>
 
 
 
+<<<<<<< HEAD
         <script src="./js/services/advertising_service.js"></script>
+=======
+
+=======
+        <script src="./js/services/advertising_service.js"></script>
+>>>>>>> Index incompleted
+>>>>>>> 388eb0db8a5ea574bfd68118316583a091addcf5
 
 
     </head>
