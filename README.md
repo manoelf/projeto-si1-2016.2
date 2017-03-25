@@ -1,2 +1,8 @@
 # projeto-si1-2016.2
-Repositório para desenvolvimento de projeto sugerido na disciplina Sistema de Informação I
+
+This is a project for accomplishment of the course Information of Systems I.
+Federal University of Campina Grande.
+Computer Science.
+You can find a relatory about it on https://goo.gl/jBsjLH
+
+
