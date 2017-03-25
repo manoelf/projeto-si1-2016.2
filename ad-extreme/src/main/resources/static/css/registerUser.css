@@ -78,3 +78,48 @@ select {
     box-sizing: border-box;
     align-content: center;
 }
+<<<<<<< 4cb85276aea71558ab219e7149d7affb15559ca2
+=======
+
+.adform {
+    width: 50%;
+    margin: 5% auto 15% auto;
+    display: list-item;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 5% auto 15% auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.deletebtn {
+    padding: 14px 20px;
+    background-color: #4CAF50;
+    width: 100%;
+    align-self: auto;
+    text-align: left;
+    text-justify: auto;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+thead {
+    border-color: #4CAF50;
+    background-color: #3c763d;
+}
+>>>>>>> editing web advertising list

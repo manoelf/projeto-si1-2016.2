@@ -4,6 +4,8 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <title>AdvertisingList</title>
+
+
     <script src="./../js/frameworks/angular.js"></script>
     <script src="./../js/app.js"></script>
     <div ng-include="'/html/header'"></div>
@@ -13,10 +15,7 @@
 
     <link rel="stylesheet" href="../../css/registerUser.css"/>
     <link rel="stylesheet" href="../../css/style.css"/>
-<<<<<<< a595eb1a68d6c4aef2a62452fd429e1e9574c46f
     <link rel="stylesheet" href="../../css/bootstrap.css"/>
-=======
->>>>>>> Modeling web pages
 
 </head>
 <body ng-controller="AdvertisingController as controller">
@@ -29,7 +28,10 @@
                 <td>Title</td>
                 <td>Price</td>
                 <td>Type</td>
+<<<<<<< 4cb85276aea71558ab219e7149d7affb15559ca2
                 <td>Date</td>
+=======
+>>>>>>> editing web advertising list
                 <td>      </td>
 
 
@@ -41,8 +43,12 @@
                     <td><span ng-bind="advertisement.title"></span></td>
                     <td><span ng-bind="advertisement.price"></span></td>
                     <td><span ng-bind="advertisement.type"></span></td>
+<<<<<<< 4cb85276aea71558ab219e7149d7affb15559ca2
                     <td><span ng-bind="advertisement.creationDate"></span></td>
                     <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Buy</button></td>
+=======
+                    <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Delete</button></td>
+>>>>>>> editing web advertising list
                 </tr>
 
 
