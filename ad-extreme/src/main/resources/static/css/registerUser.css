@@ -1,4 +1,4 @@
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=submit] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -6,6 +6,19 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+input[type=submit] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: list-item;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    align-content: center;
+
+  }
+
+
 
 /* Set a style for all buttons */
 button {
@@ -24,6 +37,10 @@ button {
     background-color: #f44336;
 }
 
+.submitbtn {
+    padding: 14px 20px;
+    background-color: #73f46d;
+}
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,.signupbtn {
     float: left;
@@ -46,4 +63,49 @@ button {
     margin: 5% auto 15% auto;
 }
 
+select {
+    border: 0;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width: 378px;
+    *width: 350px;
+    display: inline-table;
+    background-color: #dedbdb;
 
+    margin: 8px 0;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+.adform {
+    width: 50%;
+    margin: 5% auto 15% auto;
+    display: list-item;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}

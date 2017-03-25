@@ -9,22 +9,37 @@
 
     <script src="./../js/controllers/advertising_controller.js"></script>
     <script src="./../js/services/advertising_service.js"></script>
+    <link rel="stylesheet" href="../../css/registerUser.css"/>
+
 </head>
 <body>
 
-    <div ng-controller="AdvertisingController as controller">
+    <div ng-controller="AdvertisingController as controller" class="adform">
         <form id="adForm" ng-submit="controller.submit()">
-            <input type="hidden" ng-model="controller.advertisementForm.id"/>
-            <input type="text" placeholder="Write the advertisement content here." ng-model="controller.advertisement.title"/>
-            <input type="number"  ng-model="controller.advertisement.price"/>
+            <div class="container">
+                <h2>Register Advertising</h2>
+                <label>
+                    <b>Advertising</b>
+                </label>
+                <input type="hidden" ng-model="controller.advertisementForm.id"/>
+                <input type="text" placeholder="Write the advertisement content here." ng-model="controller.advertisement.title"/>
+                <label>
+                    <b>Price</b>
+                </label>
+                <input type="number"  ng-model="controller.advertisement.price"/>
+                <label>
+                    <b>Type</b>
+                </label>
+                <select ng-model="controller.advertisement.type" form="adForm" >
 
-            <select ng-model="controller.advertisement.type" form="adForm">
-                <option>JOB</option>
-                <option>SERVICE</option>
-                <option>BUILD</option>
-                <option>FURNITURE</option>
-            </select>
-            <input type="submit"/>
+                    <option value="None" selected="selected">Choose a type</option>
+                    <option>JOB</option>
+                    <option>SERVICE</option>
+                    <option >BUILD</option>
+                    <option>FURNITURE</option>
+                </select>
+                <input type="submit" class="submitbtn"/>
+            </div>
         </form>
     </div>
 
