@@ -24,6 +24,7 @@
                 <td>Title</td>
                 <td>Price</td>
                 <td>Type</td>
+                <td>      </td>
 
 
             </thead>
@@ -34,7 +35,7 @@
                     <td><span ng-bind="advertisement.title"></span></td>
                     <td><span ng-bind="advertisement.price"></span></td>
                     <td><span ng-bind="advertisement.type"></span></td>
-                    <td><button ng-click="controller.delete(advertisement.id)"></button></td>
+                    <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Delete</button></td>
                 </tr>
 
 
