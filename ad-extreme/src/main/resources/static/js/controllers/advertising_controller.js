@@ -6,8 +6,8 @@ app.controller('AdvertisingController', ['$scope', 'AdvertisingService', functio
     $scope.app = "Ad Extreme";
 
     var self = this;
-    self.advertisement = {id: null, title: null, price: null, type: null};
-    self.nullAdvertisementForm = {id: null, title: null, price: null };
+    self.advertisement = {id: null, title: null, price: null, type: null, creationDate: null};
+    self.nullAdvertisementForm = {id: null, title: null, price: null, creationDate: null};
     self.advertisements = [];
 
     self.fetchAllAdvertisements = function () {
