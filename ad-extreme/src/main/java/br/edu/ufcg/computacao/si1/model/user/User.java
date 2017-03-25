@@ -29,6 +29,12 @@ public class User{
     @Column(name = "personType", nullable = false)
     private PersonType personType;
 
+    @Column(name = "creditBalance", nullable = false)
+    private double creditBalance;
+
+    @Column(name = "debtorBalance", nullable = false)
+    private double debtorBalance;
+
     public User() {
     }
 
@@ -37,6 +43,8 @@ public class User{
         this.email = email;
         this.password = password;
         this.personType = personType;
+        this.creditBalance = 0;
+        this.debtorBalance = 0;
 
     }
 
@@ -82,6 +90,22 @@ public class User{
         this.personType = personType;
     }
 
+    public double getCreditBalance() {
+        return creditBalance;
+    }
+
+    public void setCreditBalance(double creditBalance) {
+        this.creditBalance = creditBalance;
+    }
+
+    public double getDebtorBalance() {
+        return debtorBalance;
+    }
+
+    public void setDebtorBalance(double debtorBalance) {
+        this.debtorBalance = debtorBalance;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -90,6 +114,8 @@ public class User{
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", personType=" + personType +
+                ", creditBalance=" + creditBalance +
+                ", debtorBalance=" + debtorBalance +
                 '}';
     }
 }
