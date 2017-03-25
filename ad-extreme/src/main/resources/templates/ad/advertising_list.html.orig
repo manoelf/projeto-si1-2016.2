@@ -28,10 +28,7 @@
                 <td>Title</td>
                 <td>Price</td>
                 <td>Type</td>
-<<<<<<< 4cb85276aea71558ab219e7149d7affb15559ca2
                 <td>Date</td>
-=======
->>>>>>> editing web advertising list
                 <td>      </td>
 
 
@@ -43,12 +40,12 @@
                     <td><span ng-bind="advertisement.title"></span></td>
                     <td><span ng-bind="advertisement.price"></span></td>
                     <td><span ng-bind="advertisement.type"></span></td>
-<<<<<<< 4cb85276aea71558ab219e7149d7affb15559ca2
                     <td><span ng-bind="advertisement.creationDate"></span></td>
+<<<<<<< 3356513ea7df468570455f9d81e5a79f5f7c330f
                     <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Buy</button></td>
 =======
                     <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Delete</button></td>
->>>>>>> editing web advertising list
+>>>>>>> Added a colum for advertising date
                 </tr>
 
 
