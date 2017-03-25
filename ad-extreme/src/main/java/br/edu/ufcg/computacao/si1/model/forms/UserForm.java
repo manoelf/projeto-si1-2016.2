@@ -8,6 +8,7 @@ public class UserForm {
     private String name;
     private String email;
     private String password;
+    private String repeatedPassword;
     private String personType;
 
     public String getName() {
@@ -34,11 +35,32 @@ public class UserForm {
         this.password = password;
     }
 
+
+    public String getRepeatedPassword() {
+        return repeatedPassword;
+    }
+
+    public void setRepeatedPassword(String repeatedPassword) {
+        this.repeatedPassword = repeatedPassword;
+    }
+
     public String getPersonType() {
         return personType;
     }
 
     public void setPersonType(String personType) {
         this.personType = personType;
+    }
+
+
+    @Override
+    public String toString() {
+        return "UserForm{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", repeatedPassword='" + repeatedPassword + '\'' +
+                ", personType='" + personType + '\'' +
+                '}';
     }
 }

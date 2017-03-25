@@ -16,6 +16,7 @@ public interface UserService {
     public void delete (Long id);
     public void update (User user);
     public List<User> getAll();
-    public boolean containsUserEmail(String email);
+    public boolean isEmailExist(String email);
 
+    void add(User user);
 }

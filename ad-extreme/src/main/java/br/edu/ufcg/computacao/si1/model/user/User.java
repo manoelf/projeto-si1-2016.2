@@ -14,7 +14,7 @@ import java.util.Collection;
 public class User{
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name = "_id", nullable = false, unique = true)
+    @Column(name = "id", nullable = false, unique = true)
     private Long id;
 
     @Column(name = "name", nullable = false)
@@ -26,17 +26,20 @@ public class User{
     @Column(name = "password", nullable = false)
     private String password;
 
+    @Column(name = "personType", nullable = false)
+    private PersonType personType;
 
-//    @Column(name = "personType", nullable = false)
-//    private PersonType personType;
+    public User() {
+    }
 
     public User(String name, String email, String password, PersonType personType) {
         this.name = name;
         this.email = email;
         this.password = password;
-//        this.personType = personType;
+        this.personType = personType;
 
     }
+
 
     public Long getId() {
         return id;
@@ -70,11 +73,23 @@ public class User{
         this.password = password;
     }
 
-//    public PersonType getPersonType() {
-//        return personType;
-//    }
-//
-//    public void setPersonType(PersonType personType) {
-//        this.personType = personType;
-//    }
+
+    public PersonType getPersonType() {
+        return personType;
+    }
+
+    public void setPersonType(PersonType personType) {
+        this.personType = personType;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", personType=" + personType +
+                '}';
+    }
 }

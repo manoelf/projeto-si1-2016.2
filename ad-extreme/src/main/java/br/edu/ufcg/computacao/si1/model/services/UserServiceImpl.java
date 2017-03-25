@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public boolean containsUserEmail(String email) {
+    public boolean isEmailExist(String email) {
         boolean result = false;
         for (User user: getAll()) {
             if (user.getEmail().equals(email)) {
@@ -58,5 +58,10 @@ public class UserServiceImpl implements UserService{
             }
         }
         return result;
+    }
+
+    @Override
+    public void add(User user) {
+        userRepository.save(user);
     }
 }
