@@ -16,6 +16,16 @@ public class WebPagesController {
         return "index";
     }
 
+    @RequestMapping(value = "/html/footer")
+    public String footer() {
+        return "html/footer";
+    }
+
+    @RequestMapping(value = "/html/header")
+    public String header() {
+        return "html/header";
+    }
+
     @RequestMapping(value = "/advertisement/list")
     public String getAdvertisementList() {
         return "ad/advertising_list";
@@ -26,7 +36,7 @@ public class WebPagesController {
         return "ad/advertising_form";
     }
 
-    @RequestMapping(value = "/user/form")
+    @RequestMapping(value = "/user/register")
     public String createNewUser() {
         return "user/register_user";
     }
@@ -35,5 +45,11 @@ public class WebPagesController {
     public String getUserList() {
         return "user/user_list";
     }
+
+    @RequestMapping(value = "/user/login")
+    public String userLogin() {
+        return "user/user_login";
+    }
+
 
 }

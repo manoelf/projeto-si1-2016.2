@@ -4,14 +4,13 @@
         <meta charset="utf-8"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <title>Ad Extreme</title>
-        <meta name="description" content=""/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <div ng-include="'/html/header'"></div>
+
+        <!---->
 
 
-        <link rel="stylesheet" href="./css/normalize.css"/>
-        <link rel="stylesheet" href="./css/main.css"/>
-        <link rel="stylesheet" href="./css/bootstrap.css"/>
-        <link rel="stylesheet" href="./css/style.css"/>
+
+
 
 
         <script src="./js/frameworks/angular.js"></script>
@@ -19,26 +18,13 @@
         <script src="./js/frameworks/jquerry.js"></script>
         <script src="./js/frameworks/bootstrap.js"></script>
         <script src="./js/app.js"></script>
+
         <script src="./js/controllers/advertising_controller.js"></script>
-        <nav id="main">
-            <ul type="disc">
-                <li><a href="https://github.com/manoelf/projeto-si1-2016.2">GitHub</a> </li>
-
-            </ul>
-        </nav>
-
-
-
-
-        <div class="topnav" id="myTopnav">
-            <a href="http://localhost:8080">Ad Extreme</a>
-            <a href="/user/form">Register</a>
-            <a href="http://localhost:8080/html/user/user_login.html">Login</a>
-        </div>
-
-
-
+        <script src="./js/controllers/user_controller.js"></script>
         <script src="./js/services/advertising_service.js"></script>
+        <script src="./js/services/user_service.js"></script>
+
+        <!---->
 
 
     </head>
@@ -59,7 +45,5 @@
 
     </body>
 
-    <footer>
-        <h5 class="credits">Copyright © Gerson Sales, Mattheus Rodrigues and Manoel Ferreira</h5>
-    </footer>
+    <footer ng-include="'/html/footer'"></footer>
 </html>
