@@ -21,6 +21,7 @@
     <form action="/login" method="post">
         <div class="container">
 
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <label>
                 <b>Email</b>
             </label>

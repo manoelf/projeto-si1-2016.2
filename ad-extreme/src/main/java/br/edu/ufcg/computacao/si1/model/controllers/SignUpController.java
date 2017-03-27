@@ -5,6 +5,7 @@ import br.edu.ufcg.computacao.si1.model.forms.UserForm;
 import br.edu.ufcg.computacao.si1.model.services.UserService;
 import br.edu.ufcg.computacao.si1.model.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -13,14 +14,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
  * Created by manoel on 16/03/17.
  */
 @Controller
-public class UserController {
+public class SignUpController {
 
     @Autowired
     private UserService userService;
@@ -35,8 +38,8 @@ public class UserController {
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/user/", method = RequestMethod.POST)
-    public ResponseEntity<Void> addNewUser(@RequestBody UserForm userForm, BindingResult bindingResult) {
+    @RequestMapping(value = "/register/", method = RequestMethod.POST)
+    public ResponseEntity<Void> addNewUser(@RequestBody @Valid UserForm userForm, BindingResult bindingResult) {
         System.out.println("Creating user " + userForm.getName());
 
         if (bindingResult.hasErrors()) {
@@ -47,9 +50,13 @@ public class UserController {
 
             return new ResponseEntity<Void>(HttpStatus.CONFLICT);
         }
-        userService.add(UserFactory.createNewUser(userForm));
+
+        User user = UserFactory.createNewUser(userForm);
+        userService.add(user);
         System.out.println("user " + userForm.getName() + " created successfully.");
         System.out.println(userService.getAll());
+
+
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
 

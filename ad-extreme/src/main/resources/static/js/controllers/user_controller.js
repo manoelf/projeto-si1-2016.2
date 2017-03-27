@@ -19,8 +19,8 @@ app.controller('userController', ['$scope', 'UserService', function($scope, User
         )
     };
 
-    self.createUser = function(user){
-        UserService.createUser(user)
+    self.createUser = function(userForm){
+        UserService.createUser(userForm)
             .then(self.fetchAllUsers(),
                  function(errResponse){
                     console.error('Error while creating User.');

@@ -36,9 +36,9 @@ public class WebPagesController {
         return "ad/advertising_form";
     }
 
-    @RequestMapping(value = "/user/register")
+    @RequestMapping(value = "/register")
     public String createNewUser() {
-        return "user/register_user";
+        return "register_user";
     }
 
     @RequestMapping(value = "/user/list")

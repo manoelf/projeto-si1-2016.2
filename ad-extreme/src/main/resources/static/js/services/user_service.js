@@ -31,8 +31,9 @@ return {
             );
     },
 
-    createUser: function (user) {
-        return $http.post('http://localhost:8080/user/', user)
+    createUser: function (userForm) {
+        console.log("User form" + userForm + "has arrived in service.");
+        return $http.post('http://localhost:8080/register/', userForm)
             .then(
                 function (response) {
                     return response.data;
