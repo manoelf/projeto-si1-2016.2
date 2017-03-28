@@ -19,8 +19,7 @@ return {
     },
 
     getUser: function (user) {
-        return $http.get('http://localhost:8080/user' + id, user)
-            .then(
+        return $http.get('http://localhost:8080/user' + id, user).then(
                 function (response) {
                     return response.data;
                 },
@@ -33,8 +32,7 @@ return {
 
     createUser: function (userForm) {
         console.log("User form" + userForm + "has arrived in service.");
-        return $http.post('http://localhost:8080/register/', userForm)
-            .then(
+        return $http.post('http://localhost:8080/user/', userForm).then(
                 function (response) {
                     return response.data;
                 },

@@ -10,10 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.Valid;
@@ -22,30 +19,24 @@ import java.util.List;
 /**
  * Created by manoel on 16/03/17.
  */
-@Controller
+@RestController
+@RequestMapping("/user/")
 public class SignUpController {
 
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/user/", method = RequestMethod.GET)
-    public ResponseEntity<List<User>> getAllUsers() {
-        List<User> users = userService.getAll();
 
-        if (users.isEmpty()) {
-            return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);
-        }
-        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
-    }
-
-    @RequestMapping(value = "/register/", method = RequestMethod.POST)
-    public ResponseEntity<Void> addNewUser(@RequestBody @Valid UserForm userForm, BindingResult bindingResult) {
+    @ResponseStatus(HttpStatus.OK)
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<Void> addNewUser(@RequestBody UserForm userForm) {
         System.out.println("Creating user " + userForm.getName());
 
-        if (bindingResult.hasErrors()) {
-            System.out.println(bindingResult);
-            return new ResponseEntity<Void>(HttpStatus.NOT_ACCEPTABLE);
-        }else if (userService.isEmailExist(userForm.getEmail())) {
+//        if (bindingResult.hasErrors()) {
+//            System.out.println(bindingResult);
+//            return new ResponseEntity<Void>(HttpStatus.NOT_ACCEPTABLE);
+//        }else
+        if (userService.isEmailExist(userForm.getEmail())) {
             System.out.println("User " + userForm.getName() + " already exist.");
 
             return new ResponseEntity<Void>(HttpStatus.CONFLICT);
@@ -59,6 +50,18 @@ public class SignUpController {
 
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<List<User>> getAllUsers() {
+        List<User> users = userService.getAll();
+
+        if (users.isEmpty()) {
+            return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+    }
+
+
 
 
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
