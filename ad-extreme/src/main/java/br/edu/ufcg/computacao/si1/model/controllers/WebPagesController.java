@@ -51,5 +51,8 @@ public class WebPagesController {
         return "user/user_login";
     }
 
-
+    @RequestMapping(value = "/user/logged")
+    public String userLogged() {
+        return "user/user_logged";
+    }
 }
