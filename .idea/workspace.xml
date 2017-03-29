@@ -1,231 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c233405c-5b9b-44dc-bc6e-cbd5d6edda1a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/projeto-si1-2016.2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_h2database_h2_1_4_193.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_eclipse_jdt_core_compiler_ecj_4_5_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_class_model_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_config_types_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_external_asm_all_repackaged_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_config_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_core_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_runlevel_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_hk2_spring_bridge_2_5_0_b32.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_bean_validation_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_spring3_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_json_jackson_2_25_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1212_jre7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_rest_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jersey_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_2_6_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_data_spring_data_rest_webmvc_2_6_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_23_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_webjars_bootstrap_3_3_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_webjars_font_awesome_4_7_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_webjars_jquery_1_12_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/oadextreme.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/OadextremeApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/controllers/AdvertisingController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/controllers/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/controllers/WebPagesController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/factories/AdvertisingFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/factories/UserFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/advertising/Advertising.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/advertising/AdvertisingType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/forms/AdvertisingForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/forms/UserForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/LegalPerson.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/LoggedUser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/PersonType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/PhysicalPerson.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/PostPermission$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/PostPermission.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/model/user/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/repositories/AdvertisingRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/repositories/UserRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/services/AdvertisingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/services/AdvertisingServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/services/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/br/edu/ufcg/computacao/si1/services/UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/static/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/static/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/static/js/controller/UserController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/static/js/controller/advertising_controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/static/js/service/advertising_service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/templates/ad/advertising_list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/templates/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oadextreme/target/test-classes/br/edu/ufcg/computacao/si1/OadextremeApplicationTests.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/InitialPoint.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/InitialPoint.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/advertising/Advertisement.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/advertising/Advertisement.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/advertising/AdvertisementType.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/advertising/AdvertisementType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/configuration/AuthenticationHandler.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/configuration/AuthenticationHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/configuration/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/configuration/SecurityConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/configuration/SecurityConfiguration.java.orig" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/configuration/SecurityConfiguration.java.orig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/controllers/AdvertisementController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/controllers/AdvertisementController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/controllers/SignUpController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/controllers/SignUpController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/controllers/WebPagesController.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/controllers/WebPagesController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/factories/AdvertisementFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/factories/AdvertisementFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/factories/LegalPersonFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/factories/LegalPersonFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/factories/PhysicalPersonFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/factories/PhysicalPersonFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/factories/UserFactory.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/factories/UserFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/factories/UserFactoryMethod.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/factories/UserFactoryMethod.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/forms/AdvertisementForm.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/forms/AdvertisementForm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/forms/UserForm.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/forms/UserForm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/repositories/AdvertisingRepository.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/repositories/AdvertisingRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/repositories/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/repositories/UserRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/services/AdvertisementService.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/services/AdvertisementService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/services/AdvertisementServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/services/AdvertisementServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/services/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/services/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/services/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/services/UserServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/user/LegalPerson.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/user/LegalPerson.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/user/LoggedUser.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/user/LoggedUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/user/PersonType.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/user/PersonType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/user/PhysicalPerson.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/user/PhysicalPerson.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/user/PostPermission.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/user/PostPermission.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/java/br/edu/ufcg/computacao/si1/model/user/User.java" afterPath="$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/model/user/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/banner.txt" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/main.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/normalize.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/normalize.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/registerUser.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/registerUser.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/registerUser.css.orig" afterPath="$PROJECT_DIR$/src/main/resources/static/css/registerUser.css.orig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/css/style.css.orig" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css.orig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/app.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/controllers/advertising_controller.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/controllers/advertising_controller.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/controllers/user_controller.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/controllers/user_controller.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/frameworks/angular-route.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/frameworks/angular-route.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/frameworks/angular.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/frameworks/angular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/frameworks/bootstrap.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/frameworks/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/frameworks/jquerry.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/frameworks/jquerry.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/services/advertising_service.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/services/advertising_service.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/static/js/services/user_service.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/services/user_service.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/ad/advertising_form.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/ad/advertising_form.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/ad/advertising_list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/ad/advertising_list.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/ad/advertising_list.html.orig" afterPath="$PROJECT_DIR$/src/main/resources/templates/ad/advertising_list.html.orig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/html/footer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/html/footer.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/html/header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/html/header.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/html/logged_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/html/logged_header.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/register_user.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/register_user.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/user/logged_user.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/logged_user.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/user/user_list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user_list.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/main/resources/templates/user/user_login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/user_login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ad-extreme/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/br/edu/ufcg/computacao/si1/service/AnuncioServiceTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/oadextreme/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/oadextreme/target/classes/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="800ee712-5579-4f6b-ae98-31780933fece" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -240,30 +16,6 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="InitialPoint.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/InitialPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -279,7 +31,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="280" />
+    <option name="y" value="24" />
     <option name="width" value="1366" />
     <option name="height" value="744" />
   </component>
@@ -298,81 +50,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ad-extreme" />
+              <option name="myItemId" value="projeto-si1-2016.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="projeto-si1-2016.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad-extreme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projeto-si1-2016.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad-extreme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projeto-si1-2016.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ad-extreme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projeto-si1-2016.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="si1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,20 +188,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c233405c-5b9b-44dc-bc6e-cbd5d6edda1a" name="Default" comment="" />
-      <created>1490754626357</created>
+      <changelist id="800ee712-5579-4f6b-ae98-31780933fece" name="Default" comment="" />
+      <created>1490755136431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1490754626357</updated>
-      <workItem from="1490754627995" duration="105000" />
+      <updated>1490755136431</updated>
+      <workItem from="1490755139741" duration="320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105000" />
+    <option name="totallyTimeSpent" value="320000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="280" width="1366" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -557,31 +251,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/edu/ufcg/computacao/si1/InitialPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
