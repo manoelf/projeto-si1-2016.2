@@ -1,4 +1,3 @@
-/*
 package br.edu.ufcg.computacao.si1.model.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,21 +28,16 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         http
                 .csrf().disable()
                 .authorizeRequests()
-<<<<<<< 23e580b38209f201f853598f9118c48c0304bc0f
                 .antMatchers("/", "/html/**", "/register").permitAll()
                 .antMatchers(HttpMethod.POST, "/user/**").permitAll()
-=======
-                .antMatchers("/", "/html*/
-/**", "/register").permitAll()
->>>>>>> Filter developed
                 .anyRequest().authenticated()
                 .and()
-        .formLogin()
+                .formLogin()
                 .loginPage("/user/login").permitAll()
                 .successHandler(new AuthenticationHandler())
                 .failureUrl("/login?error")
                 .and()
-        .logout().permitAll();
+                .logout().permitAll();
     }
 
     @Autowired
@@ -62,5 +56,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 //                .ignoring()
 //                .antMatchers(HttpMethod.POST, "/user");
 //    }
+<<<<<<< 3696d179e530c0f17cfd906c0dc0ca05fa36515a
 }
-*/
+=======
+}
+>>>>>>> comments are removed
