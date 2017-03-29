@@ -13,11 +13,13 @@
 
     <link rel="stylesheet" href="../../css/registerUser.css"/>
     <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
 
 </head>
 <body ng-controller="AdvertisingController as controller">
     <h1>Advertisement List</h1>
     <div ng-init="controller.fetchAllAdvertisements()">
+        <input class="form-control" type="text" ng-model="searchCriteria" placeholder="What are you looking for?"/>
         <table>
             <thead>
                 <td>ID</td>
@@ -31,13 +33,13 @@
             </thead>
 
             <tbody>
-                <tr ng-repeat="advertisement in controller.advertisements">
+                <tr ng-repeat="advertisement in controller.advertisements | filter: searchCriteria">
                     <td><span ng-bind="advertisement.id"></span></td>
                     <td><span ng-bind="advertisement.title"></span></td>
                     <td><span ng-bind="advertisement.price"></span></td>
                     <td><span ng-bind="advertisement.type"></span></td>
                     <td><span ng-bind="advertisement.creationDate"></span></td>
-                    <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Delete</button></td>
+                    <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Buy</button></td>
                 </tr>
 
 
