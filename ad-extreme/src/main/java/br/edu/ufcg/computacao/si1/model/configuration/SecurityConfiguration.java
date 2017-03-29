@@ -42,9 +42,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
     @Autowired
     protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-//        InMemoryUserDetailsManagerConfigurer<AuthenticationManagerBuilder> inMemoryUserDetailsManagerConfigurer;
-//        inMemoryUserDetailsManagerConfigurer = auth.inMemoryAuthentication();
-//        inMemoryUserDetailsManagerConfigurer.withUser("admin").password("123").roles("USER");
         auth.jdbcAuthentication().dataSource(dataSource)
                 .usersByUsernameQuery(
                         "select email as username,password as password, true as enabled from user_tb where email=?")
@@ -52,17 +49,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
                         "select email as username, permission from user_tb where email=?");
 
     }
-
-
-//        auth.jdbcAuthentication().dataSource(dataSource)
-//                .usersByUsernameQuery(
-//                        "select email as username,senha as password, true as enabled from tb_usuario where email=?")
-//                .authoritiesByUsernameQuery(
-//                        "select email as username, role from tb_usuario where email=?");
-//
-//        InMemoryUserDetailsManagerConfigurer<AuthenticationManagerBuilder> inMemoryUser;
-//        inMemoryUser= auth.inMemoryAuthentication();
-//        inMemoryUser.withUser("admin").password("123").roles("USER");
 
 //    @Override
 //    public void configure(WebSecurity web) throws Exception {
