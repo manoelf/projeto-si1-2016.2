@@ -23,4 +23,8 @@ public class PhysicalPerson implements PersonType {
         return postPermissionSet.contains(postPermission);
     }
 
+    @Override
+    public String toString() {
+        return "USER";
+    }
 }

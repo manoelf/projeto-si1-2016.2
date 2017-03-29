@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.authentication.configurers.provisioning.InMemoryUserDetailsManagerConfigurer;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -28,6 +29,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "/html/**", "/register").permitAll()
+                .antMatchers(HttpMethod.POST, "/user/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
         .formLogin()
@@ -38,17 +40,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         .logout().permitAll();
     }
 
-//    @Autowired
-//    protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-//
-//
-//        auth.jdbcAuthentication().dataSource(dataSource)
-//                .usersByUsernameQuery(
-//                        "select email as username,password as password, true as enabled from user_tb where email=?")
-//                .authoritiesByUsernameQuery(
-//                        "select email as username, role from user_tb where email=?");
-//
-//    }
+    @Autowired
+    protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+//        InMemoryUserDetailsManagerConfigurer<AuthenticationManagerBuilder> inMemoryUserDetailsManagerConfigurer;
+//        inMemoryUserDetailsManagerConfigurer = auth.inMemoryAuthentication();
+//        inMemoryUserDetailsManagerConfigurer.withUser("admin").password("123").roles("USER");
+        auth.jdbcAuthentication().dataSource(dataSource)
+                .usersByUsernameQuery(
+                        "select email as username,password as password, true as enabled from user_tb where email=?")
+                .authoritiesByUsernameQuery(
+                        "select email as username, permission from user_tb where email=?");
+
+    }
 
 
 //        auth.jdbcAuthentication().dataSource(dataSource)

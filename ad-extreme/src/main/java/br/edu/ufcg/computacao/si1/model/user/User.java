@@ -26,7 +26,8 @@ public class User{
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "personType", nullable = false)
+    @Column(name = "permission", nullable = false)
+    private String permission  = "USER";
     private PersonType personType;
 
     @Column(name = "creditBalance", nullable = false)
@@ -117,5 +118,13 @@ public class User{
                 ", creditBalance=" + creditBalance +
                 ", debtorBalance=" + debtorBalance +
                 '}';
+    }
+
+    public String getPermission() {
+        return permission;
+    }
+
+    public void setPermission(String permission) {
+        this.permission = permission;
     }
 }

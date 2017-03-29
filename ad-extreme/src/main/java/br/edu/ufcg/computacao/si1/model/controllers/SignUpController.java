@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * Created by manoel on 16/03/17.
  */
-@RestController
+@Controller
 @RequestMapping("/user/")
 public class SignUpController {
 
@@ -27,15 +27,14 @@ public class SignUpController {
     private UserService userService;
 
 
-    @ResponseStatus(HttpStatus.OK)
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Void> addNewUser(@RequestBody UserForm userForm) {
+    public ResponseEntity<Void> addNewUser(@RequestBody @Valid  UserForm userForm, BindingResult bindingResult) {
         System.out.println("Creating user " + userForm.getName());
 
-//        if (bindingResult.hasErrors()) {
-//            System.out.println(bindingResult);
-//            return new ResponseEntity<Void>(HttpStatus.NOT_ACCEPTABLE);
-//        }else
+        if (bindingResult.hasErrors()) {
+            System.out.println(bindingResult);
+            return new ResponseEntity<Void>(HttpStatus.NOT_ACCEPTABLE);
+        }else
         if (userService.isEmailExist(userForm.getEmail())) {
             System.out.println("User " + userForm.getName() + " already exist.");
 
