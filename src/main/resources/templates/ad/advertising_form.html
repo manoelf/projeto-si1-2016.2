@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appADExtreme">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Advertising form</title>
+    <script src="./../js/frameworks/angular.js"></script>
+    <script src="./../js/app.js"></script>
+    <div ng-include="'/html/header'"></div>
+
+    <script src="./../js/controllers/advertising_controller.js"></script>
+    <script src="./../js/services/advertising_service.js"></script>
+    <link rel="stylesheet" href="../../css/registerUser.css"/>
+
+</head>
+<body>
+
+    <div ng-controller="AdvertisingController as controller" class="adform">
+        <form id="adForm" ng-submit="controller.submit()">
+            <div class="container">
+                <h2>Register Advertising</h2>
+                <label>
+                    <b>Advertising</b>
+                </label>
+                <input type="hidden" ng-model="controller.advertisementForm.id"/>
+                <input type="text" placeholder="Write the advertisement content here." ng-model="controller.advertisement.title"/>
+                <label>
+                    <b>Price</b>
+                </label>
+                <input type="number"  ng-model="controller.advertisement.price"/>
+                <label>
+                    <b>Type</b>
+                </label>
+                <select ng-model="controller.advertisement.type" form="adForm" >
+
+                    <option value="None" selected="selected">Choose a type</option>
+                    <option>JOB</option>
+                    <option>SERVICE</option>
+                    <option >BUILD</option>
+                    <option>FURNITURE</option>
+                </select>
+                <input type="submit" class="submitbtn"/>
+            </div>
+        </form>
+    </div>
+
+</body>
+<footer ng-include="'/html/footer'"></footer>
+</html>

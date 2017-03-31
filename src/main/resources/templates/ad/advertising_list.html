@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appADExtreme">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>AdvertisingList</title>
+
+
+    <script src="./../js/frameworks/angular.js"></script>
+    <script src="./../js/app.js"></script>
+    <div ng-include="'/html/header'"></div>
+
+    <script src="./../js/controllers/advertising_controller.js"></script>
+    <script src="./../js/services/advertising_service.js"></script>
+
+    <link rel="stylesheet" href="../../css/registerUser.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+
+</head>
+<body ng-controller="AdvertisingController as controller">
+    <h1>Advertisement List</h1>
+    <div ng-init="controller.fetchAllAdvertisements()">
+        <input class="form-control" type="text" ng-model="searchCriteria" placeholder="What are you looking for?"/>
+        <table>
+            <thead>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Type</td>
+                <td>Date</td>
+                <td>      </td>
+
+
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="advertisement in controller.advertisements | filter: searchCriteria">
+                    <td><span ng-bind="advertisement.id"></span></td>
+                    <td><span ng-bind="advertisement.title"></span></td>
+                    <td><span ng-bind="advertisement.price"></span></td>
+                    <td><span ng-bind="advertisement.type"></span></td>
+                    <td><span ng-bind="advertisement.creationDate"></span></td>
+                    <td><button class="deletebtn" ng-click="controller.delete(advertisement.id)">Buy</button></td>
+                </tr>
+
+
+            </tbody>
+
+
+        </table>
+
+
+    </div>
+
+</body>
+<footer ng-include="'/html/footer'"></footer>
+</html>
